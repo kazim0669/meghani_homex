@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left-side ">
+            <div class="logo">
+                <img src="meghani-homex-removebg-preview.png" alt="homex.png">
+            </div>
+            <div class="nav-icons">
+                <h2 class="menu-text showontoggle">Menu</h2>
+                <a class="dropdown-toggle" href="#">
+                    <div class="left-dt-content">
+                        <i class="bi bi-grid-1x2-fill"></i>
+                        <h2 class="showontoggle">Dashboards</h2>
+                    </div>
+                    <i class="bi bi-caret-down-fill showontoggle"></i>
+                </a>
+                <a class="dropdown-toggle" href="">
+                    <div class="left-dt-content">
+                        <i class="bi bi-buildings-fill"></i>
+                        <h2 class="showontoggle">Property managment</h2>
+                    </div>
+                    <i class="bi bi-caret-down-fill showontoggle"></i>
+                </a>
+                <a class="dropdown-toggle" href="">
+                    <div class="left-dt-content">
+                        <i class="bi bi-person-fill "></i>
+                        <h2 class="showontoggle">Owner Management</h2>
+                    </div>
+                    <i class="bi bi-caret-down-fill showontoggle"></i>
+                </a>
+                <a class="dropdown-toggle" href="">
+                    <div class="left-dt-content">
+                        <i class="bi bi-calendar-event-fill"></i>
+                        <h2 class="showontoggle">Booking Management</h2>
+                    </div>
+                    <i class="bi bi-caret-down-fill showontoggle"></i>
+                </a>
+                <a class="dropdown-toggle" href="">
+                    <div class="left-dt-content">
+                        <i class="bi bi-currency-rupee"></i>
+                        <h2 class="showontoggle"> Payments & Transactions</h2>
+                    </div>
+                    <i class="bi bi-caret-down-fill showontoggle"></i>
+                </a>
+                <a class="dropdown-toggle" href="">
+                    <div class="left-dt-content">
+                        <i class="bi bi-envelope-arrow-down"></i>
+                        <h2 class="showontoggle">Complaints & Support</h2>
+                    </div>
+                    <i class="bi bi-caret-down-fill showontoggle"></i>
+                </a>
+                <a class="dropdown-toggle" href="">
+                    <div class="left-dt-content">
+                        <i class="bi bi-chat-left-text-fill"></i>
+                        <h2 class="showontoggle">Community & Reviews</h2>
+                    </div>
+                    <i class="bi bi-caret-down-fill showontoggle"></i>
+                </a>
+                <a class="dropdown-toggle" href="">
+                    <div class="left-dt-content">
+                        <i class="bi bi-rocket-takeoff-fill "></i>
+                        <h2 class="showontoggle">Marketing & Promotions</h2>
+                    </div>
+                    <i class="bi bi-caret-down-fill showontoggle"></i>
+                </a>
+                <a class="dropdown-toggle" href="">
+                    <div class="left-dt-content">
+                        <i class="bi bi-microsoft"></i>
+                        <h2 class="showontoggle">App Management</h2>
+                    </div>
+                    <i class="bi bi-caret-down-fill showontoggle"></i>
+                </a>
+                <a class="dropdown-toggle" href="">
+                    <div class="left-dt-content">
+                        <i class="bi bi-clipboard2-data-fill"></i>
+                        <h2 class="showontoggle">Reports & Analytics</h2>
+                    </div>
+                    <i class="bi bi-caret-down-fill showontoggle"></i>
+                </a>
+                <a class="dropdown-toggle" href="">
+                    <div class="left-dt-content">
+                        <i class="bi bi-gear-fill"></i>
+                        <h2 class="showontoggle">Settings</h2>
+                    </div>
+                    <i class="bi bi-caret-down-fill showontoggle"></i>
+                </a>
+                <a class="dropdown-toggle" href="">
+                    <div class="left-dt-content">
+                        <i class="bi bi-box-arrow-left"></i>
+                        <h2 class="showontoggle">Logout</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="top-nav">
+                <div class="left-top-nav">
+                    <i id="extend-side-bar" class="bi bi-arrow-right"></i>
+                    <input type="search" placeholder="Search">
+                    <i class="bi bi-search"></i>
+                </div>
+                <div class="right-top-nav">
+                    <div class="right-top-links">
+                        <a href="#"><i class="bi bi-question-lg"></i></a>
+                        <a href="#"><i class="bi bi-chat-right-text-fill"></i></a>
+                        <a href="#"><i class="bi bi-bell-fill"></i></a>
+                    </div>
+                    <div class="right-top-founder">
+                        <img src="111.webp" alt="founder-img">
+                        <div class="founder-text">
+                            <h1>Abhishek Mahto</h1>
+                            <p>Founder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav2">
+                <div class="left-nav2-content">
+                    <h2>ANALYTICS</h2>
+                </div>
+                <div class="right-nav2-content">
+                    <h3>Dashboards</h3>
+                    <i class="bi bi-chevron-right"></i>
+                    <p>Analytics</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const extendSidebar = document.getElementById("extend-side-bar");
+        const showontoggle = document.querySelectorAll(".showontoggle"); 
+        const leftSide = document.querySelector(".left-side");
+        extendSidebar.addEventListener("click" , function (){
+            for (i = 0 ; i < showontoggle.length ; i++){
+                if (showontoggle[i].style.display === "none"){
+                showontoggle[i].style.display= "block";
+            } else {
+                showontoggle[i].style.display= "none";
+            }
+        }
+        leftSide.classList.toggle("extend");
+    })
+
+    </script>
+
+</body>
+
+</html>
