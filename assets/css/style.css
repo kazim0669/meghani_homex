@@ -26,15 +26,41 @@ body {
     gap: 25px;
 }
 .logo {
-    width: 100%;
-    display: flex;
-    justify-content:center;
+
 }
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;  
+    align-self: center; 
+}
+
+.menu-icon div {
+    background-color: #1E525A; /* Dark teal color */
+    height: 4px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+.menu-icon div:nth-child(1){
+    margin-left: auto;
+}
+
+.menu-icon div:nth-child(1),
+.menu-icon div:nth-child(3) {
+    width: 20px;
+}
+
+.menu-icon div:nth-child(2) {
+    width: 30px; /* Middle line is longer */
+}
+
 .logo img:first-child {
-    width: 50px;
+    height: 50px;
 }
 .logo img:nth-child(2) {
-    width: 200px;
+    height: 50px;
 }
 .hideontoggle.active{
     display: none;
@@ -127,11 +153,12 @@ body {
 }
 
 .right-top-founder img{
-    width: 40px;
+    width: 44px;
     clip-path: circle(50%);
 }
 .founder-text h1 {
     font-size: 14px;
+    margin-bottom: 4px;
 }
 .founder-text p {
     font-size: 13px;
@@ -151,7 +178,9 @@ body {
     align-items: center;
     gap: 17px;
 }
-
+.left-nav2-content h2{
+    font-size: 16px;
+}
 .right-nav2-content h3 {
     font-weight: 500;
     font-size: 14px;
@@ -166,15 +195,10 @@ body {
     font-size: 14px;
 }
 .extend{
-    width: 350px;
+    width: 360px;
     align-items: start;
     padding:25px 20px;
     animation: opacity 0.6s ease-in-out;
-}
-
-.menu-text {
-    color: #B3B8C2;
-    font-size: 14px;
 }
 .dropdown-toggle {
     display: flex;
@@ -182,16 +206,25 @@ body {
     /* margin-left: 10px; */
     align-items: center;
 }
+
+.col {
+    display: flex;
+    width: 100%;
+}
 .dropdown-toggle h2 {
     font-size: 14px;
     color: black;
     font-weight: 400;
+}
+.bi-caret-down-fill::before {
+    font-size: 16px;
 }
 .left-dt-content {
     display: flex;
     align-items: center;
     gap: 10px;
     width: 100%;
+    cursor: pointer;
 }
 .left-dt-content + i {
     color: black;
@@ -201,7 +234,7 @@ body {
     display: none;
 }
 
-#extend-side-bar {
+.bi-arrow-right , .menu-icon {
     cursor: pointer;
 }
 @keyframes opacity {
