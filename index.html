@@ -19,87 +19,278 @@
             </div>
             <div class="nav-icons">
                 <div class="nav-links">
-                    <div class="dropdown-toggle" href="#">
-                        <div class="col">
+                    <div class="dropdown-toggle" onclick="dropdownMenu('dashboardmenu')" href="#">
                             <a class="left-dt-content">
                                 <i class="bi bi-grid-1x2-fill"></i>
                                 <h2 class="showontoggle">Dashboards</h2>
                             </a>
-                            <i class="bi bi-caret-down-fill showontoggle"></i>
-                        </div>
-                        
+                            <i class="bi bi-caret-down-fill showontoggle" ></i>
                     </div>
-                    <a class="dropdown-toggle" href="">
-                        <div class="left-dt-content">
-                            <i class="bi bi-buildings-fill"></i>
-                            <h2 class="showontoggle">Property Management</h2>
-                        </div>
-                        <i class="bi bi-caret-down-fill showontoggle"></i>
-                    </a>
-                    <a class="dropdown-toggle" href="">
-                        <div class="left-dt-content">
+                    <ul class="dropdown-ul" id="dashboardmenu">
+                        <li>
+                            <div></div>
+                            <a href="#">Overview</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Revenue & Bookings</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Property Statistics</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">User Activity</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown-toggle" onclick="dropdownMenu('Propertymanagmentmenu')" href="">
+                            <a class="left-dt-content">
+                                <i class="bi bi-buildings-fill"></i>
+                                <h2 class="showontoggle">Property Management</h2>
+                            </a>
+                            <i class="bi bi-caret-down-fill showontoggle"></i>
+                    </div>
+                    <ul class="dropdown-ul" id="Propertymanagmentmenu">
+                        <li>
+                            <div></div>
+                            <a href="#">All Properties</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Add New Property</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Approval Requests</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown-toggle" onclick="dropdownMenu('ownermanagment')" >
+                        <a class="left-dt-content">
                             <i class="bi bi-person-fill "></i>
                             <h2 class="showontoggle">Owner Management</h2>
-                        </div>
+                        </a>
                         <i class="bi bi-caret-down-fill showontoggle"></i>
-                    </a>
-                    <a class="dropdown-toggle" href="">
-                        <div class="left-dt-content">
+                    </div>
+                    <ul class="dropdown-ul" id="ownermanagment">
+                        <li>
+                            <div></div>
+                            <a href="#">Hostel Owners</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">PG Owners</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Flat Owners</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Blocked Owners</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown-toggle" onclick="dropdownMenu('bookingmanagement')">
+                        <a class="left-dt-content">
                             <i class="bi bi-calendar-event-fill"></i>
                             <h2 class="showontoggle">Booking Management</h2>
-                        </div>
+                        </a>
                         <i class="bi bi-caret-down-fill showontoggle"></i>
-                    </a>
-                    <a class="dropdown-toggle" href="">
-                        <div class="left-dt-content">
+                    </div>
+                    <ul class="dropdown-ul" id="bookingmanagement">
+                        <li>
+                            <div></div>
+                            <a href="#">All Bookings & Rentals</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Pending Approvals</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Canceled Bookings</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">User Activity</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown-toggle" onclick="dropdownMenu('paymentmenu')">
+                        <a class="left-dt-content">
                             <i class="bi bi-currency-rupee"></i>
                             <h2 class="showontoggle"> Payments & Transactions</h2>
-                        </div>
+                        </a>
                         <i class="bi bi-caret-down-fill showontoggle"></i>
-                    </a>
-                    <a class="dropdown-toggle" href="">
-                        <div class="left-dt-content">
+                    </div>
+                    <ul class="dropdown-ul" id="paymentmenu">
+                        <li>
+                            <div></div>
+                            <a href="#">Overview</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Revenue & Bookings</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Property Statistics</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">User Activity</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown-toggle" onclick="dropdownMenu('Complaintsmenu')">
+                        <a class="left-dt-content">
                             <i class="bi bi-envelope-arrow-down"></i>
                             <h2 class="showontoggle">Complaints & Support</h2>
-                        </div>
+                        </a>
                         <i class="bi bi-caret-down-fill showontoggle"></i>
-                    </a>
-                    <a class="dropdown-toggle" href="">
-                        <div class="left-dt-content">
+                    </div>
+                    <ul class="dropdown-ul" id="Complaintsmenu">
+                        <li>
+                            <div></div>
+                            <a href="#">Overview</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Revenue & Bookings</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Property Statistics</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">User Activity</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown-toggle" onclick="dropdownMenu('Communitymenu')">
+                        <a class="left-dt-content">
                             <i class="bi bi-chat-left-text-fill"></i>
                             <h2 class="showontoggle">Community & Reviews</h2>
-                        </div>
+                        </a>
                         <i class="bi bi-caret-down-fill showontoggle"></i>
-                    </a>
-                    <a class="dropdown-toggle" href="">
-                        <div class="left-dt-content">
+                    </div>
+                    <ul class="dropdown-ul" id="Communitymenu">
+                        <li>
+                            <div></div>
+                            <a href="#">Overview</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Revenue & Bookings</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Property Statistics</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">User Activity</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown-toggle" onclick="dropdownMenu('Marketingmenu')" >
+                        <a class="left-dt-content">
                             <i class="bi bi-rocket-takeoff-fill "></i>
                             <h2 class="showontoggle">Marketing & Promotions</h2>
-                        </div>
+                        </a>
                         <i class="bi bi-caret-down-fill showontoggle"></i>
-                    </a>
-                    <a class="dropdown-toggle" href="">
-                        <div class="left-dt-content">
+                    </div>
+                    <ul class="dropdown-ul" id="Marketingmenu">
+                        <li>
+                            <div></div>
+                            <a href="#">Overview</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Revenue & Bookings</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Property Statistics</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">User Activity</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown-toggle" onclick="dropdownMenu('appmanagmentmenu')">
+                        <a class="left-dt-content">
                             <i class="bi bi-microsoft"></i>
                             <h2 class="showontoggle">App Management</h2>
-                        </div>
+                        </a>
                         <i class="bi bi-caret-down-fill showontoggle"></i>
-                    </a>
-                    <a class="dropdown-toggle" href="">
-                        <div class="left-dt-content">
+                    </div>
+                    <ul class="dropdown-ul" id="appmanagmentmenu">
+                        <li>
+                            <div></div>
+                            <a href="#">Overview</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Revenue & Bookings</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Property Statistics</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">User Activity</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown-toggle" onclick="dropdownMenu('Reportsmenu')">
+                        <a class="left-dt-content">
                             <i class="bi bi-clipboard2-data-fill"></i>
                             <h2 class="showontoggle">Reports & Analytics</h2>
-                        </div>
+                        </a>
                         <i class="bi bi-caret-down-fill showontoggle"></i>
-                    </a>
-                    <a class="dropdown-toggle" href="">
-                        <div class="left-dt-content">
+                    </div>
+                    <ul class="dropdown-ul" id="Reportsmenu">
+                        <li>
+                            <div></div>
+                            <a href="#">Overview</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Revenue & Bookings</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Property Statistics</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">User Activity</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown-toggle" onclick="dropdownMenu('Settings')">
+                        <a class="left-dt-content">
                             <i class="bi bi-gear-fill"></i>
                             <h2 class="showontoggle">Settings</h2>
-                        </div>
+                        </a>
                         <i class="bi bi-caret-down-fill showontoggle"></i>
-                    </a>
-                    <a class="dropdown-toggle" href="">
+                    </div>
+                    <ul class="dropdown-ul" id="Settings">
+                        <li>
+                            <div></div>
+                            <a href="#">Overview</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Revenue & Bookings</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">Property Statistics</a>
+                        </li>
+                        <li>
+                            <div></div>
+                            <a href="#">User Activity</a>
+                        </li>
+                    </ul>
+                    <a class="dropdown-toggle" onclick="dropdownMenu('')">
                         <div class="left-dt-content">
                             <i class="bi bi-box-arrow-left"></i>
                             <h2 class="showontoggle">Logout</h2>
@@ -156,7 +347,6 @@
         const navLinks = document.querySelector(".nav-links");
         const hideontoggle = document.querySelectorAll(".hideontoggle");
         const mainContent = document.querySelector(".main-content"); 
-        // extendSidebar.addEventListener("click" , function (){
         function extend(){
             for (i = 0 ; i < showontoggle.length ; i++){
                 if (showontoggle[i].style.display === "none" || showontoggle[i].style.display === ''){
@@ -174,13 +364,29 @@
             hideontoggle[j].classList.toggle("active");
 
         }
-        // if (extendSidebar.classList.contains("bi-arrow-right")){
-        //     extendSidebar.classList.replace("bi-arrow-right","fa-solid fa-align-left");
-        // } else {
-        //     extendSidebar.classList.replace("fa-solid fa-align-left","bi-arrow-right");
-        // }
     }
-    // })
+    
+
+    let activeMenu = null;
+    function dropdownMenu(menuid){
+        const dropdownUl = document.querySelectorAll(".dropdown-ul");
+        const menu = document.getElementById(menuid);
+       
+        if (activeMenu === menu) {
+            menu.style.display = "none";
+            activeMenu = null;
+            return;
+        } 
+
+        dropdownUl.forEach(submenu => {
+            submenu.style.display = "none";
+        })
+         
+        menu.style.display = "flex";
+        activeMenu = menu;
+    
+        
+    }
 
     </script>
 
