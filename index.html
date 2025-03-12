@@ -343,6 +343,7 @@
     <script>
         // const extendSidebar = document.getElementById("extend-side-bar");
         const showontoggle = document.querySelectorAll(".showontoggle"); 
+        const dropdownUl = document.querySelectorAll(".dropdown-ul");
         const leftSide = document.querySelector(".left-side");
         const navLinks = document.querySelector(".nav-links");
         const hideontoggle = document.querySelectorAll(".hideontoggle");
@@ -357,36 +358,45 @@
             }
         }
 
+        dropdownUl.forEach(submenu => {
+            submenu.style.display = "none";
+        })
+
         mainContent.classList.toggle("active");
         leftSide.classList.toggle("extend");
         navLinks.classList.toggle("active");
         for (j = 0 ; j < hideontoggle.length ; j++){
             hideontoggle[j].classList.toggle("active");
-
         }
-    }
-    
 
+    }
     let activeMenu = null;
     function dropdownMenu(menuid){
-        const dropdownUl = document.querySelectorAll(".dropdown-ul");
-        const menu = document.getElementById(menuid);
-       
-        if (activeMenu === menu) {
-            menu.style.display = "none";
-            activeMenu = null;
-            return;
-        } 
+        const leftSide = document.querySelector(".left-side");
 
-        dropdownUl.forEach(submenu => {
-            submenu.style.display = "none";
-        })
-         
-        menu.style.display = "flex";
-        activeMenu = menu;
+        if (leftSide.classList.contains("extend")){
+
+            const dropdownUl = document.querySelectorAll(".dropdown-ul");
+            const menu = document.getElementById(menuid);
+           
+            
+            if (activeMenu === menu) {
+                menu.style.display = "none";
+                activeMenu = null;
+                return;
+            } 
     
-        
+            dropdownUl.forEach(submenu => {
+                submenu.style.display = "none";
+            })
+             
+            menu.style.display = "flex";
+            activeMenu = menu;
+        }
+    
     }
+    
+
 
     </script>
 
