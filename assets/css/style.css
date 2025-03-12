@@ -236,6 +236,7 @@ body {
 
 .bi-arrow-right , .menu-icon {
     cursor: pointer;
+    color: #1E525A;
 }
 @keyframes opacity {
     0% { opacity: 0; }
